@@ -1,0 +1,720 @@
+@media all and (max-width: 2000px) {
+  /*사이드 슬라이드 메뉴 시작*/
+
+  .sidemenue {
+    position: fixed;
+    max-width: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    transition: all 2s;
+    z-index: 999;
+    right: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .sidemenuebar {
+    max-width: 500px;
+  }
+
+  .close {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .close:hover {
+    color: tomato;
+    cursor: pointer;
+  }
+
+  .sidemenue > a {
+    display: block;
+    padding: 50px 150px 20px 50px;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .sidemenue > a:hover {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+  }
+
+  /*사이드 슬라이드 메뉴 시작*/
+
+  /*타이틀 시작*/
+  .position {
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    height: 138px;
+    background-color: white;
+  }
+
+  .title {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .title > span {
+    padding: 11px;
+  }
+
+  .title > span:first-child {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+  }
+
+  .title > span:nth-child(2) {
+    border-right: 1px solid #dddddd;
+  }
+
+  /*타이틀 끝*/
+
+  /*메뉴바 시작*/
+  .menuebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    margin-top: 40px;
+    box-sizing: border-box;
+  }
+
+  .menuecontents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding-bottom: 40px;
+  }
+
+  .menueone {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .menuetwo {
+    display: none;
+    width: 200px;
+    margin-top: 50px;
+    transition: all 5s;
+  }
+
+  .menuecontents:hover .menuetwo {
+    position: absolute;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    z-index: 999;
+    border-radius: 10px;
+  }
+
+  .menuetwo > li {
+    width: auto;
+    padding: 10px;
+    border-bottom: 1px solid#dddddd;
+  }
+
+  .input {
+    margin-top: -10px;
+  }
+
+  .in {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+  }
+
+  .fa-search {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+
+  .fa-bars {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /*메뉴바 끝*/
+
+  /*슬라이더 시작*/
+  .bigimg {
+    height: 630px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .bigim {
+    width: 100%;
+    height: 500px;
+  }
+
+  .checkbox {
+    position: absolute;
+    width: 99.9%;
+    height: 628px;
+    z-index: 888;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .checkboxone {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+  }
+
+  .color {
+    color: tomato;
+  }
+
+  .colorwhiteP {
+    color: white;
+  }
+
+  .sliderbar {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+  }
+
+  .calender {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .yearcal {
+    width: 115px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #df3b42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yearcaltext {
+    white-space: nowrap;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .fa-calendar-alt {
+    font-size: 20px;
+  }
+
+  .year-info {
+    margin-left: 40px;
+    white-space: nowrap;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .year {
+    margin: 0px 10px;
+  }
+
+  .fa-chevron-right,
+  .fa-chevron-left {
+    color: #9a9a9d;
+  }
+
+  .month-info {
+    display: flex;
+    color: #9a9a9d;
+  }
+
+  .month-info > li {
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+
+  .month-info > li:first-child {
+    margin-left: 40px;
+  }
+
+  .sun {
+    color: tomato;
+  }
+
+  /*슬라이더 끝*/
+
+  /*가운데 시작*/
+  .mid {
+    height: 800px;
+    background-color: #eaedf2;
+  }
+
+  .placechoice {
+    display: flex;
+    justify-content: center;
+  }
+
+  .place {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bolder;
+    margin-top: 70px;
+  }
+
+  .plone {
+    margin-right: 2px;
+  }
+
+  .plthree {
+    margin-left: 2px;
+  }
+
+  .clicked {
+    background-color: #df3b42;
+    color: white;
+  }
+
+  .midslider {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #525d69;
+  }
+
+  .midsliderOne {
+    width: 1300px;
+    height: 425px;
+  }
+
+  .midmidslidertwotext {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .midmidslidertwoimg {
+    width: 270px;
+    height: 335px;
+    box-shadow: 0px 30px 30px #dde0e5;
+  }
+
+  .textslide {
+    width: 270px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    box-shadow: 10px 30px 30px#dde0e5;
+  }
+
+  .midmidslidertwotext-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+
+  .slick-next:before {
+    font-size: 50px;
+    color: #525d69;
+  }
+
+  .slick-prev:before {
+    position: absolute;
+    font-size: 50px;
+    color: #525d69;
+    right: 0px;
+  }
+
+  .midblack {
+    position: absolute;
+    width: 270px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .more {
+    visibility: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: red;
+  }
+
+  .midblack:hover {
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .midblack:hover .more {
+    visibility: visible;
+  }
+
+  .midupslide {
+    display: flex;
+    justify-content: center;
+    margin-top: -75px;
+  }
+
+  .uping {
+    height: 150px;
+    width: 1300px;
+  }
+
+  .uparrow {
+    width: 80px;
+  }
+
+  .uparrowbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: white;
+    font-size: 39px;
+  }
+
+  /*가운데 끝*/
+
+  /*마지막 시작*/
+  .endboard {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .endselector {
+    display: flex;
+  }
+
+  .selector {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 2px;
+    background-color: #eaedf2;
+  }
+
+  .selecot {
+    background-color: tomato;
+    color: white;
+  }
+
+  .endabout {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .endabout-box {
+    width: 290px;
+    height: 260px;
+    border: 1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .endabout-box:hover {
+    border: 4px solid red;
+  }
+
+  .endbox-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .endbox-text {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .endbox-date {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #658093;
+  }
+
+  .midbox {
+    margin: 0px 20px;
+  }
+
+  .endpopup {
+    margin-left: 95px;
+  }
+
+  .sliderend {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .endpopup-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .endpopup-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .texts {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  .endpopup-slider {
+    width: 365px;
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  .endcomumber {
+    margin-top: 70px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaedf2;
+  }
+
+  .endcomunity {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 490px;
+    height: 175px;
+    background-color: white;
+  }
+
+  .endnumber {
+    width: 875px;
+    height: 175px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    white-space: nowrap;
+  }
+
+  .iconofphone {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-phone-square-alt {
+    font-size: 70px;
+  }
+
+  .stage {
+    margin-top: 5px;
+    font-size: 23px;
+    margin-left: 10px;
+  }
+
+  .interpark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .inter {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #616161;
+  }
+
+  .inter-top {
+    margin-bottom: 10px;
+    background-color: #616161;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .numberone {
+    display: flex;
+    padding-right: 20px;
+    border-right: 1px dotted black;
+  }
+
+  .numberthre {
+    display: flex;
+    padding-left: 20px;
+  }
+
+  .stagea {
+    margin-bottom: 5px;
+  }
+
+  .numbertwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    height: 70px;
+    border-right: 1px dotted black;
+  }
+
+  .stagetwo {
+    font-size: 20px;
+  }
+
+  .numberthre {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-couch {
+    font-size: 70px;
+  }
+
+  .seat {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .remote {
+    width: 55px;
+    height: 50px;
+    margin-right: 50px;
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+  .endslider {
+    height: 127px;
+    width: 99.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .endslider-cont {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .endslider-text {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .d-texts {
+    height: 65px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dddddd;
+  }
+
+  .d-texts:hover {
+    transition: all 0.5s;
+    border: 3px solid tomato;
+  }
+
+  /*마지막 끝*/
+
+  /*풋터 시작*/
+  .sticky-nav {
+    width: 99.9%;
+    transition: all 0.5s;
+    position: relative;
+    height: 60px;
+    bottom: 0;
+    background-color: gray;
+    z-index: 998;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .fixed-nav .sticky-nav {
+    position: fixed;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer {
+    height: 165px;
+    background-color: #2c2a2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+  }
+
+  /*풋터 끝*/
+}
+
+@media all and (max-width: 1650px) {
+  html {
+    width: 1650px;
+  }
+}
